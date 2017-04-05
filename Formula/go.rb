@@ -112,6 +112,14 @@ class Go < Formula
   end
 end
 __END__
+--- a/VERSION
++++ b/VERSION
+@@ -1 +1 @@
+-go1.8
+\ No newline at end of file
++go1.8-parallelbuilds
+\ No newline at end of file
+
 diff --git a/src/cmd/go/build.go b/src/cmd/go/build.go
 index 98a6509..9008c43 100644
 --- a/src/cmd/go/build.go
