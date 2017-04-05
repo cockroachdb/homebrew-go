@@ -20,7 +20,7 @@ cease to exist entirely if patches are merged upstream.
 With Homebrew installed, run:
 
 ```shell
-$ brew install cockroachdb/go/cockroach-go
+$ brew install cockroachdb/go/go
 ```
 
 If you've already installed Go via Homebrew, you'll be prompted to

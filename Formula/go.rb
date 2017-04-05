@@ -1,4 +1,4 @@
-class CockroachGo < Formula
+class Go < Formula
   desc "The Go programming language"
   homepage "https://golang.org"
 
@@ -16,7 +16,7 @@ class CockroachGo < Formula
   end
 
   head do
-    url "https://go.googlesource.com/go.git"
+    url "https://go.googlesource.com/go.git", branch: "release-branch.go1.8"
 
     resource "gotools" do
       url "https://go.googlesource.com/tools.git"
@@ -28,8 +28,6 @@ class CockroachGo < Formula
   option "without-race", "Build without race detector"
 
   depends_on :macos => :mountain_lion
-
-  conflicts_with "go"
 
   patch :DATA
 
@@ -114,6 +112,14 @@ class CockroachGo < Formula
   end
 end
 __END__
+--- a/VERSION
++++ b/VERSION
+@@ -1 +1 @@
+-go1.8
+\ No newline at end of file
++go1.8-parallelbuilds
+\ No newline at end of file
+
 diff --git a/src/cmd/go/build.go b/src/cmd/go/build.go
 index 98a6509..9008c43 100644
 --- a/src/cmd/go/build.go
