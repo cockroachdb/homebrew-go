@@ -16,7 +16,7 @@ class Go < Formula
   end
 
   head do
-    url "https://go.googlesource.com/go.git"
+    url "https://go.googlesource.com/go.git", branch: "release-branch.go1.8"
 
     resource "gotools" do
       url "https://go.googlesource.com/tools.git"
