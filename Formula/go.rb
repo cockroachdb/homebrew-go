@@ -1,4 +1,4 @@
-class CockroachGo < Formula
+class Go < Formula
   desc "The Go programming language"
   homepage "https://golang.org"
 
@@ -28,8 +28,6 @@ class CockroachGo < Formula
   option "without-race", "Build without race detector"
 
   depends_on :macos => :mountain_lion
-
-  conflicts_with "go"
 
   patch :DATA
 
