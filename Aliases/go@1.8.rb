@@ -1,1 +1,1 @@
-../Formula/cockroach-go.rb
+../Formula/go.rb
