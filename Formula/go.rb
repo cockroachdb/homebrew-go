@@ -3,10 +3,10 @@ class Go < Formula
   homepage "https://golang.org"
 
   stable do
-    url "https://storage.googleapis.com/golang/go1.8.src.tar.gz"
-    mirror "https://fossies.org/linux/misc/go1.8.src.tar.gz"
-    version "1.8"
-    sha256 "406865f587b44be7092f206d73fc1de252600b79b3cacc587b74b5ef5c623596"
+    url "https://storage.googleapis.com/golang/go1.8.1.src.tar.gz"
+    mirror "https://fossies.org/linux/misc/go1.8.1.src.tar.gz"
+    version "1.8.1"
+    sha256 "33daf4c03f86120fdfdc66bddf6bfff4661c7ca11c5da473e537f4d69b470e57"
 
     go_version = version.to_s.split(".")[0..1].join(".")
     resource "gotools" do
@@ -115,9 +115,9 @@ __END__
 --- a/VERSION
 +++ b/VERSION
 @@ -1 +1 @@
--go1.8
+-go1.8.1
 \ No newline at end of file
-+go1.8-parallelbuilds
++go1.8.1-parallelbuilds
 \ No newline at end of file
 
 diff --git a/src/cmd/go/build.go b/src/cmd/go/build.go
