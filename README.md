@@ -1,5 +1,17 @@
 # Cockroach Go
 
+**🚫 DEPRECATED! 🚫**
+
+Our build system now compiles our C and C++ dependencies outside of cgo. This tap is no longer necessary and no longer yields a speedup over the standard Go toolchain. Please use the upstream Go toolchain instead:
+
+```shell
+$ brew uninstall cockroachdb/go/go
+$ brew untap cockroachdb/go
+$ brew install go
+```
+
+---
+
 A [Homebrew] tap to install [Cockroach Labs]'s patched version of Go. This
 currently includes the following patch:
 
